@@ -13,11 +13,11 @@ BaselineOfCSVGenerator >> baseline: spec [
 
 	spec for: #'common' do: [
 		"External dependencies"
-		"self loadNeoCSV: spec."
+		self loadNeoCSV: spec.
 		"Packages"
-		"spec 
+		spec 
 			package: #'CSVGenerator-Core';
-			package: #'CSVGenerator-Tests' with: [ spec requires: #('CSVGenerator-Core') ]"
+			package: #'CSVGenerator-Tests' with: [ spec requires: #('CSVGenerator-Core') ]
 				]
 ]
 
