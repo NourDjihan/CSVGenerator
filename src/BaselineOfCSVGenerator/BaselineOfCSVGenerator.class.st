@@ -17,7 +17,7 @@ BaselineOfCSVGenerator >> baseline: spec [
 		"Packages"
 		spec 
 			package: 'CSVGenerator-Core';
-			package: 'CSVGenerator-Tests' with: [ spec requires: #('CSVGenerator-Core') ]
+			package: 'CSVGenerator-Tests' with: [ spec requires: #('CSVGenerator-Core') ].
 				]
 ]
 
