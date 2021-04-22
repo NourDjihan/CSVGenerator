@@ -6,7 +6,7 @@ In order to install this project, execute (Do-it, Ctrl+D) the following script i
 
 ```Smalltalk
 Metacello new
-  baseline: 'ClassNameAnalyser';
+  baseline: 'CSVGenerator';
   repository: 'github://NourDjihan/CSVGenerator/src';
   load.
 ```
