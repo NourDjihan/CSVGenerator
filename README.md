@@ -10,3 +10,4 @@ Metacello new
   repository: 'github://NourDjihan/CSVGenerator/src';
   load.
 ```
+##How the use CSVGenerator:
