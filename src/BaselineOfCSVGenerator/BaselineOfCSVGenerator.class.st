@@ -3,7 +3,7 @@ I am the baseline of the CSVGenerator projects.
 "
 Class {
 	#name : #BaselineOfCSVGenerator,
-	#superclass : #Object,
+	#superclass : #BaselineOf,
 	#category : #BaselineOfCSVGenerator
 }
 
