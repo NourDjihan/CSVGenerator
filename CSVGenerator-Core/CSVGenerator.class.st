@@ -12,10 +12,10 @@ Class {
 }
 
 { #category : #'instance creation' }
-CSVGenerator class >> of: analysisDescription [
+CSVGenerator class >> of: anObject [
 
 	^ (self new 
-		model: analysisDescription)
+		model: anObject)
 ]
 
 { #category : #generating }
