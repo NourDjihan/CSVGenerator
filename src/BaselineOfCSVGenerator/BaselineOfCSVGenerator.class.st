@@ -16,8 +16,8 @@ BaselineOfCSVGenerator >> baseline: spec [
 		self loadNeoCSV: spec.
 		"Packages"
 		spec 
-			package: #'CSV-Core';
-			package: #'CSV-Core-Tests' with: [ spec requires: #(''CSV-Core'') ]
+			package: #'CSVGenerator-Core';
+			package: #'CSVGenerator-Tests' with: [ spec requires: #(''CSV-Core'') ]
 				]
 ]
 
