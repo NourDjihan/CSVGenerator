@@ -31,7 +31,12 @@ CSVGenerator >> generateAll: objectsOfInformation to: aPath [
 		asFileReference writeStreamDo: [ :writeStream | 
 			(NeoCSVWriter on: writeStream) 
 				writeHeader: headers; 
-				nextPutAll: data ]
+				nextPutAll: data ].
+			
+	  UIManager default
+            inform: 'Data exported.
+				Click to show in folder'
+            actionOnClick: [ aPath asFileReference openInOSFileBrowser ]
 	
 ]
 
@@ -45,7 +50,12 @@ CSVGenerator >> generateTo: aPath [
 		asFileReference writeStreamDo: [ :writeStream | 
 			(NeoCSVWriter on: writeStream) 
 				writeHeader: headers; 
-				nextPut: data ]
+				nextPut: data ].
+			
+		  UIManager default
+            inform: 'Data exported.
+				Click to show in folder'
+            actionOnClick: [ aPath asFileReference openInOSFileBrowser ]
 ]
 
 { #category : #accessing }
