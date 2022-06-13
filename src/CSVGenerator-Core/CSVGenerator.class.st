@@ -59,15 +59,16 @@ CSVGenerator >> generateTo: aPath [
 ]
 
 { #category : #accessing }
-CSVGenerator >> getData [ 
+CSVGenerator >> getData [
 
-	^ ((model class allSlots collect: #name) collect: [ :method | model perform: method ]) asArray.
+	^ (model class selectors collect: [ :selector | 
+		   model perform: selector ]) asOrderedCollection 
 ]
 
 { #category : #accessing }
-CSVGenerator >> getHeaders [ 	
+CSVGenerator >> getHeaders [
 
-	^ (model class allSlots collect: #name) asArray
+	^ model class selectors asOrderedCollection 
 ]
 
 { #category : #accessing }
